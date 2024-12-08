@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter Subject Scores</h1>
+    <form action="/submit" method="POST">
+        <label for="science">Science:</label>
+        <input type="text" id="science" name="science" placeholder="Enter Science score">
+
+        <label for="maths">Maths:</label>
+        <input type="text" id="maths" name="maths" placeholder="Enter Maths score">
+
+        <label for="c">C:</label>
+        <input type="text" id="c" name="c" placeholder="Enter C score">
+
+        <label for="data_Science">Data Science:</label>
+        <input type="text" id="data_Science" name="data_Science" placeholder="Enter Data Science score">
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

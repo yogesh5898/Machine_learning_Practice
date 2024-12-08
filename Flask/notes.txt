@@ -1,0 +1,6 @@
+HTTP verb :
+
+GET
+POST
+PUT
+DELETE
